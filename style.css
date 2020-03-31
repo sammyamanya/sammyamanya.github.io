@@ -5,7 +5,7 @@ body{
 	font-family: Ariel, Courier, sans-serif;
 	font-weight: lighter;
 	background-color: #EFDECD;
-	font-size: 15pt;
+	font-size: 20pt;
 	text-align: left;
 }
 /*
@@ -61,5 +61,4 @@ ul.Contacts{
 
 footer{
 	display: block;
-	align-content: left;
 }
