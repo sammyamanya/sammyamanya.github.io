@@ -1,0 +1,66 @@
+/*While HTML does a great job of putting words and pictures on the page, CSS exists to make your content look good.
+CSS can be in different forms: It can be internal, inline or external (the one here)*/
+body{
+	font: black;
+	font-family: Ariel, Courier, sans-serif;
+	font-weight: lighter;
+	background-color: white;
+	font-size: 15pt;
+	text-align: left;
+	margin: 20px 50px 20px 50px;
+}
+/*
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+  #EFDECD the color i had before
+  }
+ /*
+.header-img{
+	width: 100%;
+	height: 100px;
+	background: url(file:///Users/samuelamanya/Desktop/Website%20Project/img/picselfie.png); 
+	background-size: contain;
+}
+*/
+h1{
+	color: blue;
+	font-weight: bold;
+	text-align: center;
+	font-size: 30pt;
+}
+ul {
+	text-align: center;
+}
+
+#menu-outer {
+	height: 84px;
+	background: url(images/bar-bg.jpg) repeat-x;
+}
+
+.table {
+	display: table;   /* Allow the centering to work */
+	margin: 0 auto;
+}
+
+ul#horizontal-list {
+	min-width: 696px;
+	list-style: none;
+	padding-top: 20px;
+	}
+	ul#horizontal-list li {
+		display: inline;
+		margin: 1em;
+	}
+ul.Contacts{
+	display: table;
+	margin: 0 auto;
+}
+	ul#contacts-list{
+		display: inline;
+	}
+
+footer{
+	display: block;
+}
