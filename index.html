@@ -15,16 +15,120 @@ You should use the relative path when linking to content within your own website
 	p{color: grey}
 </style>-->
 <head>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+	<title>Samuel Amanya's Personal Website</title>
+	<link rel="stylesheet" href="style.css">
 	<!--meta charset="UTF-8">
-    <<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">-->
 		<!--<main>
 	<div class="header-img"></div>
 </main>-->
-<h1 id="first">Samuel Amanya's Personal Website <img src="img/picselfie.png" alt="mypicture" width="100" height="120" align="left"></a></h1>
+
+<!--<h id="first"><img src="img/picselfie.png" alt="mypicture" width="100" height="120" align="left"></a></h> --->
 </head>
 
 <body>
+<div id="header">
+	<ul id="Menu">
+		<li class="site_name"><a href="index.html">SAMUEL AMANYA (MPYISI) PERSONAL WEBSITE</a></li>
+		<li class="link"><a href="About">&raquo; About</a></li>
+		<li class="link"><a href="Interests">&raquo; Interests</a></li>
+	
+	</ul>
+</div>
+<br>
+<br>
+<br>
+<br>
+<h id="first"><img src="img/picselfie.png" alt="mypicture" width="100" height="120" align="left"></a></h>
+<br>
+<br>
+<div id="Contents">
+	<h1 id="About">About:</h1>
+		<p>I went to the <b>University of California, Berkeley</b> as a <b>MasterCard Foundation Scholar</b> and earned my <b>Bachelors degree in Economics (BA Econ)</b>. I have great interest in the intersectionality of Economics, Data and Public Policy in developing countries, and in a global context. The MasterCard Foundation scholarship is a full ride scholarship equivalent to $300,000 awarded to academically high achieving high school graudates from Sub Saharan Africa who are passionate about social change, but economically disadvantaged to afford a world class education.</p>
+
+		<p>I also have a <b>Certificate in Data Analysis for Pre-MBA</b> professionals from the <b>Imperial College London Business School.</b></p>
+
+		<p>My goal in the next five years is to be a successful and impactful leader in international Institutions such as multinational corporations, NGOs, and consultancies, government agencies and the global private sector, promoting the New World Order, Globalization, Climate Change Issues, and eradicating global poverty.</p>
+
+		<P>I am proficient and skilled in Data Analysis and Economic Theory. I can apply economic theory, economitrics and statistics to interpret data and explain world issues through an economics lense. I am comfortable with industry tools like dashboarding software such as Microsoft Excel, Microsoft Power BI and Tableau. I am also proficient in Statistical and Econometrics Software and Knowledge like Microsoft Excel, Python, R, Stata, SPSS and Matlab. Other technical skills include HTML, CSS and JavaScript which I used to build this website.</P>
+
+	<h1 id="Interests">Interests:</h1>
+		<p>My interests span Financial Analysis & Services, Management & Strategy Consulting, Data Analysis, Research, Project Management, Monitoring and Evalution of Social Ventures, International Development and Public Policy, etc.</p>
+		
+		<p>Also checkout my <b>Resume</b> in this pdf, there is my work: <a href="https://www.dropbox.com/s/el2408pxkul79m0/Samuel_Amanya_Resume%20updated.pdf?dl=0"> <img src="img/pdflogo.png" width="50" height="50"></a></p>
+
+		<p id="blog">I like to put down my thoughts and then share, check my <b>Blog</b> here:
+		<a href="http://samuelamanya.blogspot.com/"><img src="img/Blogger.svg.png" alt="Blogger" width="50" height="50" /></a></p>
+
+</div>
+
+<a href="#Contents" class="top">&#9654; Top</a>
+
+<div id="Footer"> 
+<p>
+<div id="menu-outer">
+  <div class="table">
+    <ul id="horizontal-list">
+      <li><a href="https://www.linkedin.com/in/samuel-amanya/"><img src="img/In.jpg.640x360_q85_crop.jpg" alt="Linkedin" width="70" height="50" /></a></li>
+      <li><a href="https://twitter.com/smadepartmental"><img src="img/Twitter-logo-2012.png" alt="Twitter" width="50" height="50" /></a></li>
+      <li><a href="https://www.facebook.com/samuelmpyisi"><img src="img/f_logo_RGB-Hex-Blue_512.png" alt="Facebook" width="50" height="50" /></a></li>
+      <li><a href="inlinked.html"><img src="img/ig-logo-email.png" alt="Instagram" width="50" height="50" /></a></li>
+       &copy; Samuel Amanya 2020,	All Rights Reserved.
+    </ul>
+  </div>
+</div>
+</p>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(function(){
+
+	// Click the link starting with #
+
+	$('a[href^="#"]').click(function(){
+
+
+		//Scroll speed (ms)
+
+		var speed = 500;
+
+		// Get href 
+		var href = $(this).attr("href");
+
+		//Change backcolor
+		$(".link").css('background-color', 'navy');
+
+		if (href != "#Contents"){
+			$(this).parent("li").css('background-color', 'lightseagreen');
+		}
+
+
+		// Set target
+		var target = $(href == "#" || href == "?" "html" : href);
+
+		// Get the position of target
+		var position = target.offset().top;
+
+		//Start animation
+		$("body,html").animate({scrollTop:position}, speed, 'swing')
+
+		return false;
+
+	});
+
+
+});
+
+</script>	
+
+<!---this is my first code, I am going to comment it for now and see how the new one looks like --->
+<!--
+===============================================================================
+	
+
 	<br>
 	<br>
 	<p>Hi, My name is Samuel Amanya! Thank you for visiting my Page!</p>
@@ -32,7 +136,7 @@ You should use the relative path when linking to content within your own website
 	<b>ABOUT ME:</b>
 	<p>I went to the <b>University of California, Berkeley</b> as a <b>MasterCard Foundation Scholar</b> and earned my Bachelors degree in Economics (BA Econ). I have great interest in the intersectionality between Economics, data and Public Policy in developing countries, and in a global context.</p>
 
-	<p>My goal is in the next five years is to be a successful and impactful leader in international Institutions such as multinational corporations, NGOs, and consultancies, government agencies and the global private sector, promoting the New World Order, Globalization, Climate Change Issues, and eradicating global poverty.</p>
+	<p>My goal in the next five years is to be a successful and impactful leader in international Institutions such as multinational corporations, NGOs, and consultancies, government agencies and the global private sector, promoting the New World Order, Globalization, Climate Change Issues, and eradicating global poverty.</p>
 	
 	<p>I went to the <b>University of California, Berkeley</b> and earned my degree in Economics.</p>
 
@@ -41,13 +145,16 @@ You should use the relative path when linking to content within your own website
 <b>INTERESTS:</b>
 	<p>My interests span Financial Analysis & Services, Management & Strategy Consulting, Data Analysis, Research, Project Management, Monitoring and Evalution of Social Ventures, International Development and Public Policy, etc.</p>
 
+-->
+
 <!--You can add an id attribute to any tag which will then allow you to identify that specific tag. To do this re-write the code in the HTML tag to look like this:-->
 
-
+<!--
 <p>Also checkout my <b>Resume</b> in this pdf, there is my work <a href="https://www.dropbox.com/s/el2408pxkul79m0/Samuel_Amanya_Resume%20updated.pdf?dl=0"> <img src="img/pdflogo.png" width="50" height="50"></a></p>
 
 <p id="blog">I like to put down my thoughts and then share, check my blog here:
 <a href="http://samuelamanya.blogspot.com/"><img src="img/Blogger.svg.png" alt="Blogger" width="50" height="50" /></a></p>
+-->
 
 	<!--<ul>
 	<li>
@@ -61,7 +168,7 @@ You should use the relative path when linking to content within your own website
 </li>
 </ul> -->
 	
-
+<!--
 
 <p>
 	<br>Also You Can Contact Me Here:</br>
@@ -80,13 +187,14 @@ You should use the relative path when linking to content within your own website
       <li><a href="https://twitter.com/smadepartmental"><img src="img/Twitter-logo-2012.png" alt="Twitter" width="50" height="50" /></a></li>
       <li><a href="https://www.facebook.com/samuelmpyisi"><img src="img/f_logo_RGB-Hex-Blue_512.png" alt="Facebook" width="50" height="50" /></a></li>
       <li><a href="inlinked.html"><img src="img/ig-logo-email.png" alt="Instagram" width="50" height="50" /></a></li>
-       &copy; samuel amanya 2020
+       &copy; samuel amanya 2020	All Rights Reserved.
     </ul>
   </div>
 </div>
 </p>
 
 </footer>
-
+-->
+===============================================================================================================================
 </body>
 </html>

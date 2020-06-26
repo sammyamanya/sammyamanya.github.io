@@ -1,14 +1,139 @@
+@chartset . "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:400,700');
+
 /*While HTML does a great job of putting words and pictures on the page, CSS exists to make your content look good.
 CSS can be in different forms: It can be internal, inline or external (the one here)*/
+
+/*
+===========================================================================
+
+Common
+
+===========================================================================
+*/
 body{
+
+	margin: 0;
 	font: black;
-	font-family: Ariel, Courier, sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight: lighter;
 	background-color: white;
 	font-size: 15pt;
 	text-align: left;
-	margin: 20px 50px 20px 50px;
 }
+
+/*
+===========================================================================
+
+Header 
+===========================================================================
+*/
+#header {
+	background-color: black;
+	height: 100px;
+	width: 100%;
+	position: fixed;
+}
+
+ul#menu {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: inline;
+}
+
+ul#menu li {
+	float:left;
+	padding: 20px 0 0 0;
+	height: 60px;
+	box-sizing: border-box;
+
+
+}
+
+li.site_name {
+	width: 60%;
+	text-align: left;
+}
+
+li.site_name a{
+	color: white;
+	text-decoration: none;
+	padding-left: 30px;
+}
+
+li.link {
+	width: 10%;
+	text-align: center;
+}
+
+li.link a {
+	color: white;
+	text-decoration: none;
+}
+
+li.site_name a:hover, li.link a:hover {
+	color: lightcyan;
+	font-size: 150%;
+}
+
+
+/*
+===========================================================================
+
+Contents
+===========================================================================
+*/
+
+#contents {
+	width: 40%;
+	margin:0 auto;
+	padding: 10px 0 130px 0;
+}
+
+
+h1 {
+	padding-top: 50px;
+}
+
+.top {
+	bottom: 50px;
+	right: 50px;
+	position: fixed;
+	z-index: 100;
+	color: #4285F4;
+
+}
+
+.top a:hover {
+	font-size: 150%;
+}
+
+/*
+===========================================================================
+
+Footer
+===========================================================================
+*/
+
+#footer {
+	background-color: navy;
+	bottom: 0;
+	width: 100%;
+	height: 30px;
+	position: fixed;
+	box-sizing: border-box;
+	text-align: center;
+	color: white;
+	font-size: 12px;
+	padding-top: 6px;
+
+}
+
+/*///Below this line is the first code */
+____________________________===============================================__________________________________________________
+
 /*
 .sticky {
   position: fixed;
@@ -16,7 +141,7 @@ body{
   width: 100%
   #EFDECD the color i had before
   }
- /*
+ 
 .header-img{
 	width: 100%;
 	height: 100px;
@@ -24,12 +149,16 @@ body{
 	background-size: contain;
 }
 */
+
+/*
 h1{
 	color: blue;
 	font-weight: bold;
 	text-align: center;
 	font-size: 30pt;
 }
+*/
+
 ul {
 	text-align: center;
 }
@@ -38,9 +167,12 @@ ul {
 	height: 84px;
 }
 
+
 .table {
-	display: table;   /* Allow the centering to work */
+	display: table;   /* Allow the centering to work*/
 	margin: 0 auto;
+
+
 }
 
 ul#horizontal-list {
@@ -63,3 +195,10 @@ ul.Contacts{
 footer{
 	display: block;
 }
+
+
+
+____________________________===============================================__________________________________________________
+
+
+
