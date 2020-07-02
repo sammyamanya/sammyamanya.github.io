@@ -33,6 +33,7 @@ Header
 	height: 100px;
 	width: 100%;
 	position: fixed;
+
 }
 
 ul#menu {
@@ -41,6 +42,7 @@ ul#menu {
 	margin: 0;
 	list-style: none;
 	display: inline;
+	text-align: justify;
 }
 
 ul#menu li {
