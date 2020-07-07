@@ -42,11 +42,11 @@ ul#menu {
 	margin: 0;
 	list-style: none;
 	display: inline;
-	text-align: justify;
+	text-align: center;
 }
 
 ul#menu li {
-	float:left;
+	float:right;
 	padding: 20px 0 0 0;
 	height: 60px;
 	box-sizing: border-box;
@@ -91,7 +91,7 @@ Contents
 #contents {
 	width: 40%;
 	margin:0 auto;
-	padding: 10px 0 130px 0;
+	padding: 10px 0 100px 0;
 }
 
 
