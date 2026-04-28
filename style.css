@@ -37,6 +37,20 @@ profile section
   margin-bottom: 16px;
 }
 
+.links {
+  margin-top: 12px;
+  font-size: 0.95rem;
+}
+
+.links a {
+  color: #2563eb;
+  text-decoration: none;
+  margin: 0 4px;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
 
 /* =================
 Topography
