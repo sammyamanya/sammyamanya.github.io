@@ -169,5 +169,7 @@ footer {
   .profile-photo {
     width: 140px;
     height: 140px;
+    padding-bottom: 28px;
+    margin-bottom: 36px;
   }
 }
