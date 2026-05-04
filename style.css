@@ -68,7 +68,7 @@ h1 {
 .subtitle {
   font-size: 1.25rem;
   font-weight: 500;
-  color: var(--text-primary);
+  color: #1f2933;
   margin-bottom: 6px;
 }
 
@@ -118,12 +118,14 @@ section {
 
 h2 {
   font-size: 1.35rem;
-  margin-bottom: 12px;
+  margin-top: 0;
+  margin-bottom: 14px;
   color: var(--text-primary);
 }
-
+``
 p {
-  font-size: 1.05rem;
+  font-size: 1.08rem;
+  line-height: 1.75;
   color: var(--text-secondary);
 }
 
@@ -152,6 +154,12 @@ footer {
 @media (max-width: 640px) {
   .container {
     padding: 40px 24px;
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+
   }
 
   h1 {
